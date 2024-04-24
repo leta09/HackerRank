@@ -11,6 +11,6 @@ if __name__ == '__main__':
     scores_sorted2 = [scores_sorted[i] for i in range(len(scores_sorted))  if scores_sorted[i][1] != mi]         
     mi = scores_sorted2[0][1]
     names = [scores_sorted2[i][0] for i in range(len(scores_sorted2)) if scores_sorted2[i][1] == mi]
-    for i in names:
+    for i in sorted(names):
         print(i)
    
