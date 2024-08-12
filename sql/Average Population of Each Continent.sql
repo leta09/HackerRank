@@ -1,0 +1,1 @@
+SELECT co.continent, round(avg(ci.population),2) as average_population FROM  city ci INNER JOIN  country co ON ci.CountryCode = co.code group by co.continent;
